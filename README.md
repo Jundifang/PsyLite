@@ -15,7 +15,7 @@ InternLM2.5-7B-Chat is used as the base model, and the data distilled from deeps
 
 # Architecture Diagram
 
-![Project Architecture Diagram](assets\PsyCrossFlow.jpg)
+![Project Architecture Diagram](assets/PsyCrossFlow.jpg)
 
 
 
