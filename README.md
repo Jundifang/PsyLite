@@ -61,7 +61,7 @@
 项目持续开发中，欢迎  Star⭐、PR 和 Issue。
 
 ## 🛠️ 部署
-internlm2.5_7b_distill与internlm2.5_7b_distill_orpo的基座模型都采用internlm2.5-7b-chat(https://huggingface.co/juneup/internlm2.5_7b_distill)。
+internlm2.5_7b_distill与internlm2.5_7b_distill_orpo的基座模型都采用internlm2.5-7b-chat(https://huggingface.co/juneup/internlm2.5_7b_distill) 。
 
 接下来介绍二者模型与数据集及其下载方式。
 
@@ -87,7 +87,7 @@ ollama run Juneup/internlm2.5_7b_distill:q4_k_m
 ```
 数据集组成
 
-5k条精选通用领域含思维链数据(https://huggingface.co/datasets/Congliu/Chinese-DeepSeek-R1-Distill-data-110k-SFT)+3k条含思维链心理辅导对话(https://huggingface.co/datasets/CAS-SIAT-XinHai/CPsyCoun)
+5k条精选通用领域含思维链数据(https://huggingface.co/datasets/Congliu/Chinese-DeepSeek-R1-Distill-data-110k-SFT)  +3k条含思维链心理辅导对话(https://huggingface.co/datasets/CAS-SIAT-XinHai/CPsyCoun) 。
 
 数据集下载
 
@@ -132,7 +132,7 @@ ollama run Juneup/internlm2.5_7b_distill:orpo_q4_k_m
 ```
 数据集组成
 
-PKU-SafeRLHF(https://huggingface.co/datasets/PKU-Alignment/PKU-SafeRLHF-single-dimension)经处理后最终数据集为(https://huggingface.co/datasets/juneup/PKU-SafeRLHF-orpo)
+PKU-SafeRLHF(https://huggingface.co/datasets/PKU-Alignment/PKU-SafeRLHF-single-dimension) 经处理后最终数据集为(https://huggingface.co/datasets/juneup/PKU-SafeRLHF-orpo) 。
 
 数据集下载
 
