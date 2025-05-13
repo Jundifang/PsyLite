@@ -22,6 +22,9 @@
   - [🔄 架构图](#-架构图)
   - [🎉 更新](#-更新)
   - [📝 简介](#-简介)
+  - [🛠️ 部署](#️-部署)
+    - [internlm2.5_7b_distill](#internlm25_7b_distill)
+    - [internlm2.5_7b_distill_orpo](#internlm25_7b_distill_orpo)
   - [🎖️ 致谢](#️-致谢)
 
 ## 🔄 架构图
@@ -57,7 +60,93 @@
 
 项目持续开发中，欢迎  Star⭐、PR 和 Issue。
 
+## 🛠️ 部署
+internlm2.5_7b_distill与internlm2.5_7b_distill_orpo的基座模型都采用internlm2.5-7b-chat(https://huggingface.co/Slipstream-Max/Emollm-InternLM2.5-7B-chat-GGUF-fp16)。
+
+接下来介绍二者模型与数据集及其下载方式。
+
+### internlm2.5_7b_distill
+
+架构图
+<div align="center">
+  <img src="assets\distill.png" width="800"/>
+</div>
+
+模型下载
+```bash
+git lfs install
+git clone https://huggingface.co/juneup/internlm2.5_7b_distill
+```
+若不想克隆大型文件：
+```bash
+GIT_LFS_SKIP_SMUDGE=1 git clone https://huggingface.co/juneup/internlm2.5_7b_distill
+```
+在Ollama下载
+```bash
+ollama run Juneup/internlm2.5_7b_distill:q4_k_m
+```
+数据集组成
+
+5k条精选通用领域含思维链数据(https://huggingface.co/datasets/Congliu/Chinese-DeepSeek-R1-Distill-data-110k-SFT)+3k条含思维链心理辅导对话(https://huggingface.co/datasets/CAS-SIAT-XinHai/CPsyCoun)
+
+数据集下载
+
+通用领域含思维链数据集：
+```bash
+git lfs install
+git clone https://huggingface.co/datasets/Congliu/Chinese-DeepSeek-R1-Distill-data-110k-SFT
+```
+若不想克隆大型文件：
+```bash
+GIT_LFS_SKIP_SMUDGE=1 git clone https://huggingface.co/datasets/Congliu/Chinese-DeepSeek-R1-Distill-data-110k-SFT
+```
+含思维链心理辅导对话数据集：
+```bash
+git lfs install
+git clone https://huggingface.co/datasets/CAS-SIAT-XinHai/CPsyCoun
+```
+若不想克隆大型文件：
+```bash
+GIT_LFS_SKIP_SMUDGE=1 git clone https://huggingface.co/datasets/CAS-SIAT-XinHai/CPsyCoun
+```
+
+### internlm2.5_7b_distill_orpo
+架构图
+<div align="center">
+  <img src="assets\distill_orpo.png" width="800"/>
+</div>
+
+模型下载
+```bash
+git lfs install
+git clone https://huggingface.co/juneup/internlm2.5_7b_distill_orpo
+```
+若不想克隆大型文件
+```bash
+GIT_LFS_SKIP_SMUDGE=1 git clone https://huggingface.co/juneup/internlm2.5_7b_distill_orpo
+```
+
+在Ollama下载
+```bash
+ollama run Juneup/internlm2.5_7b_distill:orpo_q4_k_m
+```
+数据集组成
+
+PKU-SafeRLHF(https://huggingface.co/datasets/PKU-Alignment/PKU-SafeRLHF-single-dimension)经处理后最终数据集为(https://huggingface.co/datasets/juneup/PKU-SafeRLHF-orpo)
+
+数据集下载
+
+```bash
+git lfs install
+git clone https://huggingface.co/datasets/juneup/PKU-SafeRLHF-orpo
+```
+若不想克隆大型文件：
+```bash
+GIT_LFS_SKIP_SMUDGE=1 git clone https://huggingface.co/datasets/juneup/PKU-SafeRLHF-orpo
+```
+
 ## 🎖️ 致谢
-上海人工智能实验室(https://www.shlab.org.cn/)提供技术与平台支持
+上海人工智能实验室(https://www.shlab.org.cn/)提供技术与平台支持。
+
 
 
