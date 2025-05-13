@@ -61,7 +61,7 @@
 项目持续开发中，欢迎  Star⭐、PR 和 Issue。
 
 ## 🛠️ 部署
-internlm2.5_7b_distill与internlm2.5_7b_distill_orpo的基座模型都采用internlm2.5-7b-chat(https://huggingface.co/Slipstream-Max/Emollm-InternLM2.5-7B-chat-GGUF-fp16)。
+internlm2.5_7b_distill与internlm2.5_7b_distill_orpo的基座模型都采用internlm2.5-7b-chat(https://huggingface.co/juneup/internlm2.5_7b_distill)。
 
 接下来介绍二者模型与数据集及其下载方式。
 
