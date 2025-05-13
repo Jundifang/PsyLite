@@ -146,7 +146,7 @@ GIT_LFS_SKIP_SMUDGE=1 git clone https://huggingface.co/datasets/juneup/PKU-SafeR
 ```
 
 ## 🎖️ 致谢
-上海人工智能实验室(https://www.shlab.org.cn/)提供技术与平台支持。
+上海人工智能实验室(https://www.shlab.org.cn/) 提供技术与平台支持。
 
 
 
