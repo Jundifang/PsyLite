@@ -132,17 +132,17 @@ ollama run Juneup/internlm2.5_7b_distill:orpo_q4_k_m
 ```
 数据集组成
 
-PKU-SafeRLHF(https://huggingface.co/datasets/PKU-Alignment/PKU-SafeRLHF-single-dimension) 经处理后最终数据集为(https://huggingface.co/datasets/juneup/PKU-SafeRLHF-orpo) 。
+PKU-SafeRLHF(https://huggingface.co/datasets/PKU-Alignment/PKU-SafeRLHF-single-dimension) 经处理后最终数据集为(https://huggingface.co/datasets/juneup/PKU-SafeRLHF-orpo-72k) 。
 
 数据集下载
 
 ```bash
 git lfs install
-git clone https://huggingface.co/datasets/juneup/PKU-SafeRLHF-orpo
+git clone https://huggingface.co/datasets/juneup/PKU-SafeRLHF-orpo-72k
 ```
 若不想克隆大型文件：
 ```bash
-GIT_LFS_SKIP_SMUDGE=1 git clone https://huggingface.co/datasets/juneup/PKU-SafeRLHF-orpo
+GIT_LFS_SKIP_SMUDGE=1 git clone https://huggingface.co/datasets/juneup/PKU-SafeRLHF-orpo-72k
 ```
 
 ## 🎖️ 致谢
