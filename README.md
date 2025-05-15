@@ -15,31 +15,31 @@
  
 </div>
 
-## 📖 content
-- [PsyLite](#psylite)
-  - [📖 Content](#--content)
-  - [🔄 Architecture Diagram](#-Architecture)
+## 📖 Content
+- [PsyLite](#psylite-a-lightweight-mental-support-ai-agent-based-on-internlm25-7b-chat-with-appropriate-crosstalks)
+  - [📖 Content](#-content)
+  - [🔄 Architecture Diagram](#-architecture)
   - [🎉 News](#-news)
   - [📝 Introduction](#-introduction)
-  - [🛠️ Deployment](#-deployment)
+  - [🛠️ Deployment](#%EF%B8%8F-deployment)
     - [internlm2.5_7b_distill](#internlm25_7b_distill)
     - [internlm2.5_7b_distill_orpo](#internlm25_7b_distill_orpo)
-  - [🎖️ Acknowledgements](#-acknowledgements)
+  - [🎖️ Acknowledgements](#%EF%B8%8F-acknowledgements)
 
 ## 🔄 Architecture
 <div align="center">
   <img src="assets\structure.png" width="800"/>
 </div>
 
-## 🎉 news
+## 🎉 News
 
 TODO
 
-## 📝 introduction
+## 📝 Introduction
 A large model application for mild psychological counseling with low hardware requirements and deep thinking ability developed based on internlm2.5-7b-chat
 <div align="center">
   <img src="assets\conversation.png" width="800"/>
-  <h3 align="center">Conversation</h3>
+  <h4 align="center">Conversation</h4>
 </div>
 
 **Advanced feature(development in progress)**
@@ -48,7 +48,7 @@ Condition RAG: Determine whether it is suitable for the current user to use cros
 
 <div align="center">
   <img src="assets\crosstalk.png" width="800"/>
-  <h3 align="center">Crosstalk(TODO)</h3>
+  <h4 align="center">Crosstalk(TODO)</h4>
 </div>
 
 Model list：
@@ -61,7 +61,7 @@ Model list：
 
 welcome  Star⭐、PR and Issues。
 
-## 🛠️ deployment
+## 🛠️ Deployment
 the base model of internlm2.5_7b_distill and internlm2.5_7b_distill_orpo is [internlm2.5-7b-chat](https://huggingface.co/juneup/internlm2.5_7b_distill) 。
 
 the following statements are models and datasets for PsyLite.
@@ -70,7 +70,7 @@ the following statements are models and datasets for PsyLite.
 
 Architecture Diagram
 <div align="center">
-  <img src="assets\distill.png" width="800"/>
+  <img src="assets\distill.png" width="450"/>
 </div>
 
 <details>
@@ -80,11 +80,11 @@ Architecture Diagram
 git lfs install
 git clone https://huggingface.co/juneup/internlm2.5_7b_distill
 ```
-若不想克隆大型文件：
+If you want to clone without large files - just their pointers：
 ```bash
 GIT_LFS_SKIP_SMUDGE=1 git clone https://huggingface.co/juneup/internlm2.5_7b_distill
 ```
-在Ollama下载
+Ollama
 ```bash
 ollama run Juneup/internlm2.5_7b_distill:q4_k_m
 ```
@@ -107,11 +107,11 @@ Architecture Diagram
 git lfs install
 git clone https://huggingface.co/juneup/internlm2.5_7b_distill_orpo
 ```
-若不想克隆大型文件：
+If you want to clone without large files - just their pointers：
 ```bash
 GIT_LFS_SKIP_SMUDGE=1 git clone https://huggingface.co/juneup/internlm2.5_7b_distill_orpo
 ```
-在Ollama下载
+Ollama
 ```bash
 ollama run Juneup/internlm2.5_7b_distill:orpo_q4_k_m
 ```
@@ -124,13 +124,13 @@ ollama run Juneup/internlm2.5_7b_distill:orpo_q4_k_m
 
 
 
-## 🎖️ acknowledgements
+## 🎖️ Acknowledgements
 
 | Organization | Description |
 |---|---|
 | [Shanghai Artificial Intelligence Laboratory](https://www.shlab.org.cn/) | Thanks for the technical and platform support |
 
-## 🌟Star History
+## 🌟 Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=Jundifang/PsyLite&type=Date)](https://www.star-history.com/#Jundifang/PsyLite&Date)
 
