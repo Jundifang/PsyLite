@@ -148,5 +148,9 @@ GIT_LFS_SKIP_SMUDGE=1 git clone https://huggingface.co/datasets/juneup/PKU-SafeR
 ## 🎖️ 致谢
 上海人工智能实验室(https://www.shlab.org.cn/) 提供技术与平台支持。
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Jundifang/PsyLite&type=Date)](https://www.star-history.com/#Jundifang/PsyLite&Date)
+
 
 
