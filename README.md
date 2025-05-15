@@ -62,7 +62,7 @@ Model list：
 welcome  Star⭐、PR and Issues。
 
 ## 🛠️ Deployment
-the base model of internlm2.5_7b_distill and internlm2.5_7b_distill_orpo is [internlm2.5-7b-chat](https://huggingface.co/juneup/internlm2.5_7b_distill) 。
+the base model of internlm2.5_7b_distill and internlm2.5_7b_distill_orpo is [internlm2_5-7b-chat](https://huggingface.co/internlm/internlm2_5-7b-chat) 。
 
 the following statements are models and datasets for PsyLite.
 
