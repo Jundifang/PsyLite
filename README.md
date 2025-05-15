@@ -1,78 +1,81 @@
-# PsyLite - 心绎四相
+# PsyLite: A lightweight mental-support AI agent based on ​InternLM2.5-7B-Chat with appropriate crosstalks 
 <div align="center">
-  <img src="assets\logo.png" width="300"/>
+  <img src="assets\logo.png" width="200"/>
 
-  <h3 align="center">PsyLite</h3>
-  <br /><br />
+
+
 </div>
 <div align="center" style="line-height: 1;">
   
   <a href="https://huggingface.co/juneup/internlm2.5_7b_distill_orpo"><img alt="internlm2.5_7b_distill_orpo"
     src="https://img.shields.io/badge/%F0%9F%A4%97%20internlm2.5_7b_distill_orpo-Hugging%20Face-ffc107?color=ffc107&logoColor=white"/></a>
- 
    <a href="https://ollama.com/Juneup/internlm2.5_7b_distill"><img alt="internlm2.5_7b_distill"
     src="https://img.shields.io/badge/%F0%9F%90%91internlm2.5_7b_distill-Ollama-ffc107?color=white&logoColor=white"/></a>
   <br>
  
 </div>
 
-## 📖 目录
-- [PsyLite - 心绎四相](#psylite---心绎四相)
-  - [📖 目录](#-目录)
-  - [🔄 架构图](#-架构图)
-  - [🎉 更新](#-更新)
-  - [📝 简介](#-简介)
-  - [🛠️ 部署](#️-部署)
+## 📖 content
+- [PsyLite](#psylite)
+  - [📖 Content](#--content)
+  - [🔄 Architecture Diagram](#-Architecture)
+  - [🎉 News](#-news)
+  - [📝 Introduction](#-introduction)
+  - [🛠️ Deployment](#-deployment)
     - [internlm2.5_7b_distill](#internlm25_7b_distill)
     - [internlm2.5_7b_distill_orpo](#internlm25_7b_distill_orpo)
-  - [🎖️ 致谢](#️-致谢)
+  - [🎖️ Acknowledgements](#-acknowledgements)
 
-## 🔄 架构图
+## 🔄 Architecture
 <div align="center">
-  <img src="assets\PsyCrossFlow.jpg" width="800"/>
+  <img src="assets\structure.png" width="800"/>
 </div>
 
-## 🎉 更新
+## 🎉 news
 
+TODO
 
-## 📝 简介
-使用 InternLM2.5-7B-Chat 作为基础模型，结合从 DeepSeek R1 提炼的数据以及心理咨询相关的数据，训练一个具备情绪分析和推理能力的心理咨询模型。
+## 📝 introduction
+A large model application for mild psychological counseling with low hardware requirements and deep thinking ability developed based on internlm2.5-7b-chat
 <div align="center">
   <img src="assets\conversation.png" width="800"/>
   <h3 align="center">Conversation</h3>
 </div>
 
-同时，我们尝试让模型学习对话相声四个步骤（垫话、瓢把儿、正活、攒底）来进行咨询，并根据用户的对话动态地切换角色（例如，当用户是故事讲述者时，模型的任务是帮助他探索；如果用户期望模型给出一些建议，那么模型就是故事讲述者）。
+**Advanced feature(development in progress)**
+
+Condition RAG: Determine whether it is suitable for the current user to use crosstalk (for the purpose of livening up the atmosphere, narrowing the mutual distance, etc.). If it is suitable, RAG retrieves the crosstalk corpus and provides it to the model to generate an answer at the same time. If it is not suitable, skip RAG directly. This enables the retrieval of the corpus only in appropriate situations during psychological counseling to provide crosstalk segments to liven up the atmosphere.
+
 <div align="center">
   <img src="assets\crosstalk.png" width="800"/>
-  <h3 align="center">Crosstalk</h3>
+  <h3 align="center">Crosstalk(TODO)</h3>
 </div>
 
-采用的模型列表如下：
-|平台|     模型       |   
+Model list：
+|Platform |     Model       |   
 | :----------: | :----------: | 
-|Hugging Face|   internlm2.5_7b_distill              |  
-|Hugging Face|   internlm2.5_7b_distill_orpo         | 
-|Hugging Face|   internlm2.5_7b_distill-Q4_K_M-GGUF  |  
-|Hugging Face|   internlm2.5_7b_distill_orpo-Q4_K_M-GGUF     |  
-|Ollama|   internlm2.5_7b_distill              | 
+|Hugging Face|   [internlm2.5_7b_distill](https://huggingface.co/juneup/internlm2.5_7b_distill)              |  
+|Hugging Face|   [internlm2.5_7b_distill_orpo](https://huggingface.co/juneup/internlm2.5_7b_distill_orpo)         | 
+|Ollama|   [internlm2.5_7b_distill_q4_k_m](https://ollama.com/Juneup/internlm2.5_7b_distill:q4_k_m)              | 
+|Ollama|   [internlm2.5_7b_distill_orpo_q4_k_m](https://ollama.com/Juneup/internlm2.5_7b_distill:orpo_q4_k_m)              | 
 
+welcome  Star⭐、PR and Issues。
 
-项目持续开发中，欢迎  Star⭐、PR 和 Issue。
+## 🛠️ deployment
+the base model of internlm2.5_7b_distill and internlm2.5_7b_distill_orpo is [internlm2.5-7b-chat](https://huggingface.co/juneup/internlm2.5_7b_distill) 。
 
-## 🛠️ 部署
-internlm2.5_7b_distill与internlm2.5_7b_distill_orpo的基座模型都采用internlm2.5-7b-chat(https://huggingface.co/juneup/internlm2.5_7b_distill) 。
-
-接下来介绍二者模型与数据集及其下载方式。
+the following statements are models and datasets for PsyLite.
 
 ### internlm2.5_7b_distill
 
-架构图
+Architecture Diagram
 <div align="center">
   <img src="assets\distill.png" width="800"/>
 </div>
 
-模型下载
+<details>
+<summary> model download</summary>
+
 ```bash
 git lfs install
 git clone https://huggingface.co/juneup/internlm2.5_7b_distill
@@ -85,70 +88,49 @@ GIT_LFS_SKIP_SMUDGE=1 git clone https://huggingface.co/juneup/internlm2.5_7b_dis
 ```bash
 ollama run Juneup/internlm2.5_7b_distill:q4_k_m
 ```
-数据集组成
 
-5k条精选通用领域含思维链数据(https://huggingface.co/datasets/Congliu/Chinese-DeepSeek-R1-Distill-data-110k-SFT)  +3k条含思维链心理辅导对话(https://huggingface.co/datasets/CAS-SIAT-XinHai/CPsyCoun) 。
+</details>
 
-数据集下载
-
-通用领域含思维链数据集：
-```bash
-git lfs install
-git clone https://huggingface.co/datasets/Congliu/Chinese-DeepSeek-R1-Distill-data-110k-SFT
-```
-若不想克隆大型文件：
-```bash
-GIT_LFS_SKIP_SMUDGE=1 git clone https://huggingface.co/datasets/Congliu/Chinese-DeepSeek-R1-Distill-data-110k-SFT
-```
-含思维链心理辅导对话数据集：
-```bash
-git lfs install
-git clone https://huggingface.co/datasets/CAS-SIAT-XinHai/CPsyCoun
-```
-若不想克隆大型文件：
-```bash
-GIT_LFS_SKIP_SMUDGE=1 git clone https://huggingface.co/datasets/CAS-SIAT-XinHai/CPsyCoun
-```
+### datasets used for training:
+ [**juneup/psy-mix-gen-distill-13k**](https://huggingface.co/datasets/juneup/psy-mix-gen-distill-13k)
 
 ### internlm2.5_7b_distill_orpo
-架构图
+Architecture Diagram
 <div align="center">
   <img src="assets\distill_orpo.png" width="800"/>
 </div>
 
-模型下载
+<details>
+<summary> model download</summary>
+
 ```bash
 git lfs install
 git clone https://huggingface.co/juneup/internlm2.5_7b_distill_orpo
 ```
-若不想克隆大型文件
+若不想克隆大型文件：
 ```bash
 GIT_LFS_SKIP_SMUDGE=1 git clone https://huggingface.co/juneup/internlm2.5_7b_distill_orpo
 ```
-
 在Ollama下载
 ```bash
 ollama run Juneup/internlm2.5_7b_distill:orpo_q4_k_m
 ```
-数据集组成
 
-PKU-SafeRLHF(https://huggingface.co/datasets/PKU-Alignment/PKU-SafeRLHF-single-dimension) 经处理后最终数据集为(https://huggingface.co/datasets/juneup/PKU-SafeRLHF-orpo-72k) 。
+</details>
 
-数据集下载
 
-```bash
-git lfs install
-git clone https://huggingface.co/datasets/juneup/PKU-SafeRLHF-orpo-72k
-```
-若不想克隆大型文件：
-```bash
-GIT_LFS_SKIP_SMUDGE=1 git clone https://huggingface.co/datasets/juneup/PKU-SafeRLHF-orpo-72k
-```
+### datasets used for training:
+ [**juneup/PKU-SafeRLHF-orpo-72k**](https://huggingface.co/datasets/juneup/PKU-SafeRLHF-orpo-72k)
 
-## 🎖️ 致谢
-上海人工智能实验室(https://www.shlab.org.cn/) 提供技术与平台支持。
 
-## Star History
+
+## 🎖️ acknowledgements
+
+| Organization | Description |
+|---|---|
+| [Shanghai Artificial Intelligence Laboratory](https://www.shlab.org.cn/) | Thanks for the technical and platform support |
+
+## 🌟Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=Jundifang/PsyLite&type=Date)](https://www.star-history.com/#Jundifang/PsyLite&Date)
 
