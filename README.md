@@ -21,10 +21,14 @@
   - [🔄 Architecture Diagram](#-architecture)
   - [🎉 News](#-news)
   - [📝 Introduction](#-introduction)
+    - [Basic feature](#basic-feature)
+    - [Advanced feature](#Advanced-feature)
+    - [Model list](#model-list)
   - [🛠️ Deployment](#%EF%B8%8F-deployment)
     - [internlm2.5_7b_distill](#internlm25_7b_distill)
     - [internlm2.5_7b_distill_orpo](#internlm25_7b_distill_orpo)
   - [🎖️ Acknowledgements](#%EF%B8%8F-acknowledgements)
+  - [🌟 Star History](#-star-history)
 
 ## 🔄 Architecture
 <div align="center">
@@ -33,25 +37,35 @@
 
 ## 🎉 News
 
-TODO
+- **\[2025/05\]** Finish developing [**pipelines**](https://github.com/open-webui/pipelines) for [**PsyLite**](https://github.com/Jundifang/PsyLite/blob/main/pipelines/PsyLite.py) ! [What's new?](#Advanced-feature)
+- **\[2025/04\]** Finish training model **internlm2.5_7b_distill** and **internlm2.5_7b_distill_orpo**  .
 
 ## 📝 Introduction
+
+### Basic feature
+
 A large model application for mild psychological counseling with low hardware requirements and deep thinking ability developed based on internlm2.5-7b-chat
 <div align="center">
   <img src="assets\conversation.png" width="800"/>
-  <h4 align="center">Conversation</h4>
+  <h4 align="center">Conversation Example</h4>
 </div>
 
-**Advanced feature(development in progress)**
+### Advanced feature
 
-Condition RAG: Determine whether it is suitable for the current user to use crosstalk (for the purpose of livening up the atmosphere, narrowing the mutual distance, etc.). If it is suitable, RAG retrieves the crosstalk corpus and provides it to the model to generate an answer at the same time. If it is not suitable, skip RAG directly. This enables the retrieval of the corpus only in appropriate situations during psychological counseling to provide crosstalk segments to liven up the atmosphere.
+**Condition RAG**: Determine whether it is suitable for the current user to use crosstalk 
+> for the purpose of livening up the atmosphere, narrowing the mutual distance, etc.
+- If it is **suitable**, RAG retrieves the crosstalk corpus and provides it to the model to generate an answer at the same time. 
+- If it is **not suitable** and is **not a dangerous conversation**, skip RAG directly. 
+- If it is **not suitable** and is a **dangerous conversation**, answer with preset phrases to prevent dangerous conversations and suggest the user seek for professional help.
+
+This enables the retrieval of the corpus only in appropriate situations during psychological counseling to provide crosstalk segments to improve the user's experience.
 
 <div align="center">
-  <img src="assets\crosstalk.png" width="800"/>
-  <h4 align="center">Crosstalk(TODO)</h4>
+  <img src="assets\multi_type.png" width="800"/>
+  <h4 align="center">Multi_type Conversation</h4>
 </div>
 
-Model list：
+### Model list
 |Platform |     Model       |   
 | :----------: | :----------: | 
 |Hugging Face|   [internlm2.5_7b_distill](https://huggingface.co/juneup/internlm2.5_7b_distill)              |  
@@ -59,7 +73,7 @@ Model list：
 |Ollama|   [internlm2.5_7b_distill_q4_k_m](https://ollama.com/Juneup/internlm2.5_7b_distill:q4_k_m)              | 
 |Ollama|   [internlm2.5_7b_distill_orpo_q4_k_m](https://ollama.com/Juneup/internlm2.5_7b_distill:orpo_q4_k_m)              | 
 
-welcome  Star⭐、PR and Issues。
+**welcome Star⭐、PR and Issues**
 
 ## 🛠️ Deployment
 the base model of internlm2.5_7b_distill and internlm2.5_7b_distill_orpo is [internlm2.5-7b-chat](https://huggingface.co/juneup/internlm2.5_7b_distill) 。
