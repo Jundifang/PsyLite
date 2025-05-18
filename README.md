@@ -33,7 +33,11 @@
 ## 🔄 Architecture
 <div align="center">
   <img src="assets\structure.png" width="800"/>
+  <h4 align="center">Overall Architecture Diagram</h4>
 </div>
+
+
+
 
 ## 🎉 News
 
@@ -41,7 +45,7 @@
 - **\[2025/04\]** Finish training model **internlm2.5_7b_distill** and **internlm2.5_7b_distill_orpo**  .
 
 ## 📝 Introduction
-
+  
 ### Basic feature
 
 A large model application for mild psychological counseling with low hardware requirements and deep thinking ability developed based on internlm2.5-7b-chat
@@ -57,6 +61,11 @@ A large model application for mild psychological counseling with low hardware re
 - If it is **suitable**, RAG retrieves the crosstalk corpus and provides it to the model to generate an answer at the same time. 
 - If it is **not suitable** and is **not a dangerous conversation**, skip RAG directly. 
 - If it is **not suitable** and is a **dangerous conversation**, answer with preset phrases to prevent dangerous conversations and suggest the user seek for professional help.
+
+<div align="center">
+  <img src="assets\pipelines.png" width="600"/>
+  <h4 align="center">Archetecture of Pipelines for PsyLite </h4>
+</div>
 
 This enables the retrieval of the corpus only in appropriate situations during psychological counseling to provide crosstalk segments to improve the user's experience.
 
