@@ -22,11 +22,15 @@
   - [🎉 News](#-news)
   - [📝 Introduction](#-introduction)
     - [Basic feature](#basic-feature)
-    - [Advanced feature](#Advanced-feature)
+    - [Advanced feature](#advanced-feature)
     - [Model list](#model-list)
   - [🛠️ Deployment](#%EF%B8%8F-deployment)
-    - [internlm2.5_7b_distill](#internlm25_7b_distill)
-    - [internlm2.5_7b_distill_orpo](#internlm25_7b_distill_orpo)
+  - [✨ Open Source List](#-open-source-list)
+    - [1. internlm2.5_7b_distill](#1-internlm25_7b_distill)
+    - [2. internlm2.5_7b_distill_orpo](#2-internlm25_7b_distill_orpo)
+    - [3. Config File Used for Training](#3-config-file-used-for-training)
+    - [4. Pipelines for PsyLite](#4-pipelines-for-psylite)
+    - [5. Crosstalk Examples](#5-crosstalk-examples)
   - [🎖️ Acknowledgements](#%EF%B8%8F-acknowledgements)
   - [🌟 Star History](#-star-history)
 
@@ -85,11 +89,17 @@ This enables the retrieval of the corpus only in appropriate situations during p
 **welcome Star⭐、PR and Issues**
 
 ## 🛠️ Deployment
+1. **Install [Ollama](https://ollama.com/)**
+2. **Install And Configure [Open-webui](https://github.com/open-webui/open-webui)**
+3. **Install And Get [PIPELINES](https://github.com/open-webui/pipelines) Connected to open-webui**
+4. **Import [PsyLite.py](https://github.com/Jundifang/PsyLite/blob/main/pipelines/PsyLite.py) to Pipelines And Configure its Valves Parameters、RAG File Path**
+5. **Have fun !**
+
+
+## ✨ Open Source List
 the base model of internlm2.5_7b_distill and internlm2.5_7b_distill_orpo is [internlm2_5-7b-chat](https://huggingface.co/internlm/internlm2_5-7b-chat) 。
 
-the following statements are models and datasets for PsyLite.
-
-### internlm2.5_7b_distill
+### 1. internlm2.5_7b_distill
 
 Architecture Diagram
 <div align="center">
@@ -114,10 +124,10 @@ ollama run Juneup/internlm2.5_7b_distill:q4_k_m
 
 </details>
 
-### datasets used for training:
+### 1.1 Datasets Used for Training:
  [**juneup/psy-mix-gen-distill-13k**](https://huggingface.co/datasets/juneup/psy-mix-gen-distill-13k)
 
-### internlm2.5_7b_distill_orpo
+### 2. internlm2.5_7b_distill_orpo
 Architecture Diagram
 <div align="center">
   <img src="assets\distill_orpo.png" width="800"/>
@@ -142,16 +152,37 @@ ollama run Juneup/internlm2.5_7b_distill:orpo_q4_k_m
 </details>
 
 
-### datasets used for training:
+### 2.1 Datasets Used for Training:
  [**juneup/PKU-SafeRLHF-orpo-72k**](https://huggingface.co/datasets/juneup/PKU-SafeRLHF-orpo-72k)
 
+
+### 3. Config File Used for Training
+
+[Click to see details](https://github.com/Jundifang/PsyLite/blob/main/config)
+
+
+### 4. Pipelines for PsyLite
+
+> [!TIP]
+> **INSTALL [PIPELINES](https://github.com/open-webui/pipelines) BEFORE USING PsyLite!**
+
+[Click to jump to **PsyLite.py**](https://github.com/Jundifang/PsyLite/blob/main/pipelines/PsyLite.py)
+
+### 5. Crosstalk Examples
+
+[Click to see details](https://github.com/Jundifang/PsyLite/blob/main/data)
 
 
 ## 🎖️ Acknowledgements
 
-| Organization | Description |
+| Team | Description |
 |---|---|
 | [Shanghai Artificial Intelligence Laboratory](https://www.shlab.org.cn/) | Thanks for the technical and platform support |
+| [Xtuner](https://github.com/InternLM/xtuner) | Thanks for the training toolkits |
+| [OpenCompass](https://github.com/open-compass/opencompass) | Thanks for the evaluation toolkits |
+| [llama.cpp](https://github.com/open-compass/opencompass) | Thanks for the model weight file converter |
+| [Open-webui](https://github.com/open-webui/open-webui) | Thanks for the excellent deployment platform | 
+| [Pieplines](https://github.com/open-webui/pipelines) | Thanks for pipelines for custom workflow|
 
 ## 🌟 Star History
 
