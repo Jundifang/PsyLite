@@ -95,6 +95,8 @@ This enables the retrieval of the corpus only in appropriate situations during p
 4. **Import [PsyLite.py](https://github.com/Jundifang/PsyLite/blob/main/pipelines/PsyLite.py) to Pipelines And Configure its Valves Parameters、RAG File Path**
 5. **Have fun !**
 
+> [!TIP]
+> **To get better performance, we reccommand to set system prompt**, [see here](https://github.com/Jundifang/PsyLite/blob/main/assets/prompt.txt)
 
 ## ✨ Open Source List
 the base model of internlm2.5_7b_distill and internlm2.5_7b_distill_orpo is [internlm2_5-7b-chat](https://huggingface.co/internlm/internlm2_5-7b-chat) 。
