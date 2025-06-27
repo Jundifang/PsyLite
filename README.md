@@ -9,7 +9,7 @@
   
   
 <a href="http://arxiv.org/abs/2506.21536"><img alt="arXiv"
-    src="https://img.shields.io/badge/arXiv-Technical%20Report-b31b1b?logo=arxiv&logoColor=white"/></a>
+    src="https://img.shields.io/badge/Technical%20Report-arXiv-b31b1b?logo=arxiv&logoColor=white"/></a>
 <a href="https://ollama.com/Juneup/internlm2.5_7b_distill"><img alt="internlm2.5_7b_distill"
     src="https://img.shields.io/badge/%F0%9F%90%91internlm2.5_7b_distill-Ollama-ffc107?color=white&logoColor=white"/></a>
 <a href="https://huggingface.co/juneup/internlm2.5_7b_distill_orpo"><img alt="internlm2.5_7b_distill_orpo"
