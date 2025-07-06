@@ -193,3 +193,17 @@ ollama run Juneup/internlm2.5_7b_distill:orpo_q4_k_m
 ## 🌟 Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=Jundifang/PsyLite&type=Date)](https://www.star-history.com/#Jundifang/PsyLite&Date)
+
+## Citation
+
+```
+@misc{ding2025psylitetechnicalreport,
+      title={PsyLite Technical Report}, 
+      author={Fangjun Ding and Renyu Zhang and Xinyu Feng and Chengye Xie and Zheng Zhang and Yanting Zhang},
+      year={2025},
+      eprint={2506.21536},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2506.21536}, 
+}
+```
